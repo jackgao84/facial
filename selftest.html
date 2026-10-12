@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Backstop for the fetch guard: requests may only go to this site. Keep it before every script. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self'; img-src 'self' blob: data:; media-src 'self' blob: mediastream:; style-src 'self' 'unsafe-inline'; worker-src 'self' blob:"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Face Lab engine self-test</title>
+    <style>body{color:#3b2a4a;background:#fff6e5;margin:0;padding:24px;font-family:ui-rounded,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}pre{white-space:pre-wrap;background:#fff;border:3px solid #3b2a4a;border-radius:16px;margin:0;padding:16px;font-size:16px}pre[data-ok=true]{background:#d2f7e8}pre[data-ok=false]{background:#e8deff}</style>
+    <script type="module" crossorigin src="/face-lab/assets/selftest-BNzEgkVs.js"></script>
+    <link rel="modulepreload" crossorigin href="/face-lab/assets/preload-helper-jlkrPQuV.js">
+    <link rel="modulepreload" crossorigin href="/face-lab/assets/landmarker-BFbNzAeB.js">
+  </head>
+  <body>
+    <h1>Face Lab engine self-test</h1>
+    <pre id="selftest-result" aria-live="polite">…</pre>
+  </body>
+</html>
